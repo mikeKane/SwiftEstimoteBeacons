@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Zxe-Ho-zKn">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Estimote SDK Swift-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftEstimoteBeacons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estimote" translatesAutoresizingMaskIntoConstraints="NO" id="UAO-jD-0oj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="575"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R10-o6-KYQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="34F-pS-rRS">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ii9-Gg-bYM">
+                                            <rect key="frame" x="0.0" y="0.0" width="312" height="560"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="KTE-A1-UzV">
+                                                <rect key="frame" x="0.0" y="0.0" width="312" height="560"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#RealityMatters  #phillyDev716" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF0-Xe-AIA">
+                                                        <rect key="frame" x="142" y="497" width="162" height="69"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="69" id="5Ve-3H-cXS"/>
+                                                            <constraint firstAttribute="width" constant="162" id="WyM-oz-K0V"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="cF0-Xe-AIA" secondAttribute="bottom" constant="-6" id="oXH-8c-73d"/>
+                                                    <constraint firstItem="cF0-Xe-AIA" firstAttribute="trailing" secondItem="KTE-A1-UzV" secondAttribute="trailingMargin" id="ovf-ur-xpJ"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2D-wQ-ABm">
+                                            <rect key="frame" x="16" y="229" width="288" height="74"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="74" id="akd-kT-V6e"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnc-Wy-7GI">
+                                            <rect key="frame" x="17" y="442" width="129" height="115"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="129" id="Fds-v5-m5Z"/>
+                                                <constraint firstAttribute="height" constant="115" id="cfd-dv-A9b"/>
+                                            </constraints>
+                                            <state key="normal" title="Button" image="estimote-logo-square">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="getConnected:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="C2k-39-1Ob"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Beacon is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQL-k9-dqu">
+                                            <rect key="frame" x="16" y="140" width="288" height="67"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="67" id="fEQ-mB-RIR"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ii9-Gg-bYM" firstAttribute="leading" secondItem="34F-pS-rRS" secondAttribute="leading" id="1QM-HW-Wd4"/>
+                                        <constraint firstItem="ii9-Gg-bYM" firstAttribute="trailing" secondItem="34F-pS-rRS" secondAttribute="trailingMargin" id="1VV-Pb-Kpm"/>
+                                        <constraint firstItem="Bnc-Wy-7GI" firstAttribute="leading" secondItem="34F-pS-rRS" secondAttribute="leading" constant="17" id="2LX-jg-iR9"/>
+                                        <constraint firstItem="yQL-k9-dqu" firstAttribute="leading" secondItem="J2D-wQ-ABm" secondAttribute="leading" id="2wy-TM-9PE"/>
+                                        <constraint firstItem="yQL-k9-dqu" firstAttribute="trailing" secondItem="J2D-wQ-ABm" secondAttribute="trailing" id="3Rh-nf-HKo"/>
+                                        <constraint firstItem="yQL-k9-dqu" firstAttribute="leading" secondItem="34F-pS-rRS" secondAttribute="leading" constant="16" id="9gs-XD-Cup"/>
+                                        <constraint firstItem="J2D-wQ-ABm" firstAttribute="top" secondItem="yQL-k9-dqu" secondAttribute="bottom" constant="22" id="D39-hE-YcZ"/>
+                                        <constraint firstItem="ii9-Gg-bYM" firstAttribute="top" secondItem="34F-pS-rRS" secondAttribute="top" id="WdR-e3-wpp"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bnc-Wy-7GI" secondAttribute="bottom" constant="11" id="hDd-rO-8EP"/>
+                                        <constraint firstItem="yQL-k9-dqu" firstAttribute="top" secondItem="34F-pS-rRS" secondAttribute="top" constant="140" id="noC-1L-mJR"/>
+                                        <constraint firstItem="J2D-wQ-ABm" firstAttribute="centerX" secondItem="34F-pS-rRS" secondAttribute="centerX" id="x6u-9w-1Jh"/>
+                                        <constraint firstItem="ii9-Gg-bYM" firstAttribute="bottom" secondItem="34F-pS-rRS" secondAttribute="bottomMargin" id="y8f-9g-f0S"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UAO-jD-0oj" firstAttribute="top" secondItem="R10-o6-KYQ" secondAttribute="top" id="2kr-XY-Bk6"/>
+                            <constraint firstItem="R10-o6-KYQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OXX-NW-QhS"/>
+                            <constraint firstItem="R10-o6-KYQ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ePb-pl-ydw"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="UAO-jD-0oj" secondAttribute="bottom" constant="-7" id="fPm-Qb-9og"/>
+                            <constraint firstItem="R10-o6-KYQ" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="hg3-au-NTu"/>
+                            <constraint firstItem="R10-o6-KYQ" firstAttribute="leading" secondItem="UAO-jD-0oj" secondAttribute="leading" id="iTO-of-aYg"/>
+                            <constraint firstItem="R10-o6-KYQ" firstAttribute="trailing" secondItem="UAO-jD-0oj" secondAttribute="trailing" id="qyG-4I-aTe"/>
+                            <constraint firstAttribute="trailing" secondItem="R10-o6-KYQ" secondAttribute="trailing" id="zYt-X6-dWD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Estimote SDK Swift" id="hrN-pd-qN2"/>
+                    <connections>
+                        <outlet property="beaconLabel" destination="J2D-wQ-ABm" id="UTp-IX-7oP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Dy-x3-cGS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zxe-Ho-zKn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Udb-aR-oIU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="aS5-Nr-yxM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rSA-cf-sdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estimote" width="1024" height="1024"/>
+        <image name="estimote-logo-square" width="500" height="500"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
